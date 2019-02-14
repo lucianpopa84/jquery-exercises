@@ -1,0 +1,431 @@
+<!-- Homework week 6 - jquery - Lucian Popa -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>jQuery Homework</title>
+    <style>
+        body{ padding: 10px 50px 10px 50px;}
+    </style>
+</head>
+
+<body>
+    <!-- Exercise 1 html-->
+    <div class="exercise1">
+        <button onclick="topFunction()" id="scrollTopButton" title="Go to top">Go to Top</button>
+        <h1> </h1>
+        <p id="statement"> </p>
+        <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+        <h5>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
+            pain..."</h5>
+
+        <div>
+            <h2>What is Lorem Ipsum?</h2>
+            <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                Ipsum.</p>
+        </div>
+        <div>
+            <h2>Why do we use it?</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here, content here', making it look like
+                readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
+                their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                (injected humour and the like).</p>
+        </div><br />
+        <div>
+            <h2>Where does it come from?</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+                of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                This book is a treatise on the theory of ethics, very popular during the Renaissance. The first
+                line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+                their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+        </div>
+    </div>
+    <hr />
+
+    <!-- Exercise 2 html-->
+    <div class="exercise2">
+        <h1> </h1>
+        <p id="statement"> </p>
+        <p id="alertText"> </p>
+    </div>
+    <hr />
+
+    <!-- Exercise 3 html-->
+    <div class="exercise3">
+        <h1> </h1>
+        <p id="statement"> </p>
+        <form name="form1" method="post" action="">
+            <p>
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms"> I have read the terms and conditions</label>
+            </p>
+            <p>
+                <input name="send" type="submit" id="submitButton" value="Submit">
+            </p>
+        </form>
+        <p id="alertText"> </p>
+    </div>
+    <hr />
+
+    <!-- Exercise 4 html-->
+    <div class="exercise4">
+        <h1> </h1>
+        <p id="statement"> </p>
+        <p id="blinkText"> This text is <span class="blinkText"> blinking </span> and this is not.</p>
+    </div>
+    <hr />
+
+    <!-- Exercise 5 html-->
+    <div class="exercise5">
+        <h1> </h1>
+        <p id="statement"> </p>
+        <div class="tableStyle">
+            <table>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Marks in Science</th>
+                </tr>
+                <tr>
+                    <td>Janet</td>
+                    <td>85.00</td>
+                </tr>
+                <tr>
+                    <td>David</td>
+                    <td>92.00</td>
+                </tr>
+                <tr>
+                    <td>Arthur</td>
+                    <td>79.00</td>
+                </tr>
+                <tr>
+                    <td>Bill</td>
+                    <td>82.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr />
+
+    <!-- Exercise 6 html-->
+    <div class="exercise6">
+        <h1> </h1>
+        <p id="statement"> </p>
+        <form>
+            <label>Input maximum 15 characters</label>
+            <p>
+                <textarea id="textarea"></textarea>
+            </p>
+            <p> <span id="remChars"> 15 </span> Character(s) Remaining </p>
+        </form>
+    </div>
+    <hr />
+
+    <!-- Exercise 7 html-->
+    <div class="exercise7">
+        <h1> </h1>
+        <p id="statement"> </p>
+
+        <select id='myColorOption'>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+        </select>
+        <input id='myColorOptionButton' type="button" value="Click to Remove all Options" />
+
+    </div>
+    <hr />
+
+    <!-- Exercise 8 html-->
+    <div class="exercise8">
+        <h1> </h1>
+        <p id="statement"> </p>
+        <p> </p> Result:
+        <p id="displayResult1"> </p>
+        <p id="displayResult2"> </p>
+    </div>
+    <hr />
+
+    <!-- Exercise 9 html-->
+    <div class="exercise9">
+        <h1> </h1>
+        <p id="statement"> </p>
+        <div class="tableStyle">
+            <table id="myTable">
+                <tr>
+                    <th>Year</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>$10000</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>$8000</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>$9000</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>
+            <input id="myButton" type="button" value="Click to remove all rows except first one" /></p>
+        <p id="result"> </p>
+    </div>
+    <hr />
+
+    <!-- Exercise 10 html-->
+    <div class="exercise10">
+        <h1> </h1>
+        <p id="statement"> </p>
+
+        <p>Click on the color and get the class name.</p>
+        <ul class="tabs">
+            <li class="colourRed">Red</li>
+            <li class="colourBlack">Black</li>
+            <li class="colourBlue">Blue</li>
+        </ul>
+        <p id="displayResult"> </p>
+    </div>
+    <hr />
+
+    <!-- Exercise 11 html-->
+    <div class="exercise11">
+        <h1> </h1>
+        <p id="statement"> </p>
+        <input type="checkbox" class="disabledCheckboxes" disabled="disabled">Red
+        <input type="checkbox" class="disabledCheckboxes" disabled="disabled">Green
+        <p><input id="removeDisabledAttributeButton" type="button" value="Click to enable check boxes" /> <span> <input
+                    id="setDisabledAttributeButton" type="button" value="Click to disable check boxes" /></span> </p>
+        <p id="displayResult"> </p>
+    </div>
+    <hr />
+
+    <script src="jquery-3.3.1.min.js"> </script>
+
+
+
+
+
+    <!---------------- Exercise 1 java script ---------------->
+    <script>
+        $(document).ready(function () {
+            $(".exercise1 h1").text("Exercise 1");
+            $(".exercise1 #statement").text("Scroll to the top of the page with jQuery");
+            $(".exercise1 #scrollTopButton").attr("style", "display: none; position: fixed; bottom: 20px;" +
+                "right: 30px; z-index: 99; border: none; outline: none; background-color: red; " +
+                "color: white; cursor: pointer; padding: 15px; border-radius: 10px; font-size: 18px"); //set scroll button attributes with jQuery
+            $(".exercise1 #scrollTopButton:hover").css("background-color", "#555"); // change background color when hover
+
+            window.onscroll = function () { scrollFunction() };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { // When the user scrolls down 20px from the top of the document
+                    $(".exercise1 #scrollTopButton").css("display", "block"); // show the button with jQuery
+                } else {
+                    $(".exercise1 #scrollTopButton").css("display", "none"); // hide the button with jQuery
+                }
+            };
+        });
+
+        // When the user clicks on the #scrollTopButton button, scroll to the top of the document
+        function topFunction() {
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+    <!-- Exercise 2 java script-->
+    <script>
+        $(document).ready(function () {
+            $(".exercise2 h1").text("Exercise 2");
+            $(".exercise2 #statement").text("Disable right click menu in html page using jQuery");
+
+            $(document).bind("contextmenu", function (e) {
+                return false;
+            });
+
+            setTimeout(function () {
+                $(".exercise2 #alertText").text("Right mouse click is disabled in this page! ");
+                $(".exercise2 #alertText").css("color", "red"); // change background color
+            }, 1000); // display "Right mouse click is disabled" message with a 1000ms delay
+        });
+
+    </script>
+
+    <!-- Exercise 3 java script-->
+    <script>
+        $(document).ready(function () {
+            $(".exercise3 h1").text("Exercise 3");
+            $(".exercise3 #statement").text("Disable/enable the form submit button. " +
+                "Disable the submit button until the visitor has clicked a check box.");
+            $(function () {
+                $('.exercise3 #submitButton').attr('disabled', 'disabled');
+                $('.exercise3 #terms').change(function (e) {
+                    if (this.checked) {
+                        $('.exercise3 #submitButton').removeAttr('disabled'); // remove disabled attribute
+                        $(".exercise3 #alertText").text("Form submit button enabled"); //change text with jQuery
+                        $(".exercise3 #alertText").css("color", "black"); // change background color
+                    } else {
+                        $('.exercise3 #submitButton').attr('disabled', 'disabled'); // add disabled attribute
+                        $(".exercise3 #alertText").text("Form submit button disabled"); //change text with jQuery
+                        $(".exercise3 #alertText").css("color", "red"); // change background color
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Exercise 4 java script-->
+    <script>
+        $(document).ready(function () {
+            $(".exercise4 h1").text("Exercise 4");
+            $(".exercise4 #statement").text("Blink text using jQuery");
+
+            setInterval(function () {
+                $('.blinkText').fadeOut(250);
+                $('.blinkText').fadeIn(250);
+            }, 500); // blink at every 500ms 
+        });
+    </script>
+
+    <!-- Exercise 5 java script-->
+    <script>
+        $(document).ready(function () {
+            $(".exercise5 h1").text("Exercise 5");
+            $(".exercise5 #statement").text("Create a Zebra Stripes table effect");
+            $(".exercise5 tr:odd").css("background-color", "darkgray"); // change background color of odd rows
+            $(".exercise5 .tableStyle table tr td").attr("style", "width: 50%; border: 1px solid gray; padding: 5px"); // style table rows
+            $(".exercise5 .tableStyle table tr th").attr("style", "width: 50%; border: 1px solid gray; padding: 10px"); // style table head
+        });
+    </script>
+
+    <!-- Exercise 6 java script-->
+    <script>
+        $(document).ready(function () {
+            $(".exercise6 h1").text("Exercise 6");
+            $(".exercise6 #statement").text("Limit character input in the textarea including " +
+                "showing how many characters are left to input.");
+
+            var maxLength = 15;
+
+            $('textarea').keypress(function (event) {
+                var textLenth = maxLength - $(this).val().length;
+                if (textLenth <= 0) {
+                    event.preventDefault(); // prevent keypress event if no characters left
+                }
+            });
+
+            $('textarea').keyup(function () {
+                var textLenth = maxLength - $(this).val().length;
+                $('#remChars').text(textLenth); // display remaining characters on keyup event
+            });
+
+        });
+    </script>
+
+    <!-- Exercise 7 java script-->
+    <script>
+        $(document).ready(function () {
+            $(".exercise7 h1").text("Exercise 7");
+            $(".exercise7 #statement").text("On a button click, " +
+                "remove all the options of a select box and then add one option and select it");
+
+            $(".exercise7 #myColorOptionButton").click(function () {
+                $(".exercise7 #myColorOption").empty(); // remove all options of the select box
+            });
+
+        });
+    </script>
+
+    <!-- Exercise 8 java script-->
+    <script>
+        $(document).ready(function () {
+            $(".exercise8 h1").text("Exercise 8");
+
+            $('.exercise8 #statement').html($('<div>').text("Check if an object is a jQuery object." +
+                "\n var object1 = { this: 'A regular JS object' };" +
+                "\n var object2 = $('body');").text().replace(/\n/g, '<br />')); // exercise 8 statement
+
+            var object1 = { this: "A regular JS object" };
+            var object2 = $('body');
+
+            if (object1.jquery) { //check if this object is a jQuery object
+                $(".exercise8 #displayResult1").text("object1 is a jQuery object.");
+            } else {
+                $(".exercise8 #displayResult1").text("object1 is not a jQuery object.");
+            }
+
+            if (object2.jquery) { //check if this object is a jQuery object
+                $(".exercise8 #displayResult2").text("object2 is a jQuery object.");
+            } else {
+                $(".exercise8 #displayResult2").text("object2 is not a jQuery object.");
+            }
+
+        });
+    </script>
+
+    <!-- Exercise 9 java script-->
+    <script>
+        $(document).ready(function () {
+            $(".exercise9 h1").text("Exercise 9");
+            $(".exercise9 #statement").text("Delete all table rows except first one using jQuery.");
+
+            $(".exercise9 tr:odd").css("background-color", "darkgray"); // change background color of odd rows
+            $(".exercise9 .tableStyle table tr td").attr("style", "width: 50%; border: 1px solid gray; padding: 5px"); // style table rows
+            $(".exercise9 .tableStyle table tr th").attr("style", "width: 50%; border: 1px solid gray; padding: 10px"); // style table head
+
+            $('.exercise9 #myButton').click(function () {
+                $(".exercise9 #myTable").find("tr:gt(0)").remove(); // remove all table rows except first one on button click
+                $(".exercise9 #result").text("Rows removed");
+            });
+
+        });
+    </script>
+
+    <!-- Exercise 10 java script-->
+    <script>
+        $(document).ready(function () {
+            $(".exercise10 h1").text("Exercise 10");
+            $(".exercise10 #statement").text("Find the class of the clicked element");
+            $(".exercise10 li").click(function () {
+                var colorClass = this.className;
+                $(".exercise10 #displayResult").text(`Class of the clicked element: ${colorClass}`);
+            });
+        });
+    </script>
+
+    <!-- Exercise 11 java script-->
+    <script>
+        $(document).ready(function () {
+            $(".exercise11 h1").text("Exercise 11");
+            $(".exercise11 #statement").text("Remove disabled attribute using jQuery.");
+            $('#removeDisabledAttributeButton').click(function () {
+                $('.disabledCheckboxes').prop("disabled", false);
+                $(".exercise11 #displayResult").text("Checkboxes disabled attributes removed!");
+            });
+            $('#setDisabledAttributeButton').click(function () {
+                $('.disabledCheckboxes').prop("disabled", true);
+                $(".exercise11 #displayResult").text("Checkboxes disabled attributes set!");
+            });
+        });
+    </script>
+</body>
+
+</html>
