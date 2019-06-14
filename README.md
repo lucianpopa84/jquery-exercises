@@ -11,12 +11,3 @@ some jQuery exercises:
 9. Delete all table rows except first one using jQuery.
 10. Find the class of the clicked element
 11. Remove disabled attribute using jQuery.
-12. Find the total width of an element (including width, padding, and border) in jQuery.
-13. Add attribute using jQuery.
-14. Using jQuery count every element (including head, body, etc.) in the document.
-15. Display a message when the focus is removed from an element.
-16. Having a list of radio inputs, on click show the label of the checked one in a separate div.
-17. Having a list of checkboxes, on click show the labels of the checked ones in a separate div.
-18. Get the styles (width, height, text color, and background color) of a clicked division.
-19. Click a word in the paragraph and highlight it.
-20. Finds all elements that are empty (Don't have child elements or text)
